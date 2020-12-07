@@ -4572,3 +4572,18 @@ You can download the PDF and Epub version of this repository from the latest run
      
 273. ### What is the benefit of Automatic Inlining of Fonts?
      During compile time, Angular CLI will download and inline the fonts that your application is using. This performance update speed up the first contentful paint(FCP) and this feature is enabled by default in apps built with version 11.
+     
+274. ### What is Builder pattern?
+Answer
+Builder pattern builds a complex object using simple objects and using a step by step approach. This builder is independent of other objects.
+
+The Director class is optional and is used to make sure that the building steps are executed in the right order with the right data by the right builder. It's about validation and delegation.
+Builder/Director pattern's steps invocations could be semantically presented by method chaining or so-called Fluent Interface syntax.
+ 
+     ```   Pizza pizza = new Pizza.Builder()
+                       .cheese(true)
+                       .pepperoni(true)
+                       .bacon(true)
+                       .build();
+     ```
+ 
